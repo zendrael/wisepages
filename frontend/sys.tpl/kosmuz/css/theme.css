@@ -1,0 +1,236 @@
+/* 
+	CSS
+*/
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	margin: 0px;
+	padding: 0px;
+	background-color: #f1f1f1;
+
+	background-image: url(../img/fundo_top.png);
+	background-position: top left;
+	background-repeat: repeat-x;
+}
+
+#corpo {
+	/*background-color: red;*/
+	width: 950px;
+	height: 100%;
+	margin: 0px auto;
+}
+
+#cabecalho {
+	/*background-color: blue;*/
+	padding-top: 42px;
+	padding-bottom: 30px;
+}
+
+#menu {
+	/*background-color: green;*/
+	margin-bottom: 35px;
+	background-image: url(../img/fundo_menu.png);
+	background-position: top left;
+	background-repeat: repeat-x;
+	text-align: center;
+	border-radius: 3px;
+	box-shadow: 0px 0px 5px #000000;
+}
+
+#menu ul {
+	margin: 0px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+#menu ul li {
+	display: inline;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 5px; 
+}
+
+#menu ul li a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 15px;
+	color: #FFFFFF;
+}
+
+#conteudo {
+	/*background-color: orange;*/
+	width: 644px;
+	float: left;
+	margin-right: 54px;
+}
+
+.conTop{
+	width: 644px;
+	height: 30px;
+	margin: 0;
+	padding: 0;
+	background: url(../img/folha_top.png) no-repeat center top;
+}
+
+.conBody{
+	width: 642px;
+	padding: 0;
+	margin: 0;
+	background: url(../img/folha_body.png) repeat-y center;
+	border: 1px transparent solid;
+}
+
+.conBottom{
+	width: 644px;
+	height: 233px;
+	margin: 0px 0 0 0; /* t, r, b, l */
+	padding: 0;
+	background: url(../img/folha_bottom.png) no-repeat center top;
+}
+
+.conInfo{
+	position: relative;
+	width: 600px;
+	margin: 0 24px -200px 20px; /* trbl */
+	padding: 0 0 0px 0;
+	min-height: 200px;
+	text-align: justify;
+}
+
+.conInfo h2 {
+	position: relative;
+	padding: 3px 0px 3px 5px; /*trbl*/
+	margin: 0;
+	text-transform: capitalize;
+	font-family: cursive;
+	font-size: 28px;
+	color: #AA0000;
+}
+
+.conInfo p {
+	line-height: 20px;
+}
+
+.conRod {
+	position: relative;
+	font-size: 10px;
+	width: 535px;
+	margin: 20px 0 0 10px; /*top right bottom left*/
+	padding: 5px 15px;
+}
+
+.conRod a {
+	font-size: 13px;
+	font-weight: bold;
+	color: #4d4d4d;
+	text-decoration: none;
+}
+
+#lateral {
+	/*background-color: gray;*/
+	width: 250px;
+	float: right;
+	color: #4d4d4d;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#lateral #latItem {
+	margin-bottom: 30px;	
+}
+
+#lateral #latItem .cabecalho {
+	height: 40px;
+	color: #FFFFFF;
+	font-size: 13px;
+	text-align: right;
+	text-transform: uppercase;
+	padding-right: 10px;
+	padding-top: 10px;
+	background-image: url(../img/lateral_top.png);
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+
+#lateral #latItem img {
+	margin-bottom: 10px;
+}
+
+#lateral #latItem p {
+	text-align:left;
+	margin: 0px;
+	padding: 0px;
+	margin-left: 15px;
+}
+
+input[type="text"], input[type="password"] {
+	border: 1px solid #979797;
+	border-radius: 3px;
+	padding: 3px;
+	margin-bottom: 5px;
+}
+
+input[type="button"] {
+	border: 1px solid #979797;
+	border-radius: 3px;
+	padding: 3px;
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #4d4d4d;
+	text-transform: uppercase;
+	font-weight: bold;
+	background-image: url(../img/botao_fundo.png);
+	background-position: top left;
+}
+
+#rodape {
+	background-color: yellow;
+	height: 100px;
+	background-image:url(../img/fundo_bottom.png);
+	background-position: top left;
+	background-repeat: repeat-x;
+	bottom: 0px;
+	font-size: 11px;
+	color: #e6e6e6;
+}
+
+#rodape .blocos {
+	width: 950px;
+	margin: 0px auto;
+}
+
+#rodape .rodParte {
+	width: 25%;
+	height: 80px;
+	float: left;
+	text-transform: uppercase;
+}
+
+#rodape .rodParte a{
+	color: #e6e6e6;
+	text-decoration: none;
+}
+
+#rodape .rodFim {
+	width: 950px;
+	margin: 0px auto;
+	text-align: center;
+}
+
+#rodape .rodFim a {
+	color: #ff9955;
+	text-decoration: none;
+}
+
+#loginErro {
+	color: #FF0000;
+	font-size: 11px;
+	background-color: #faffa2;
+	border: 1px solid #f3ff2c;
+	border-radius: 3px;
+	padding: 5px;
+	margin: 10px 20px 10px 20px; /*trbl*/
+	display: none;
+}
+

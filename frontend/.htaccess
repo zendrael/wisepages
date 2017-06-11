@@ -1,0 +1,54 @@
+# WisePages settings
+# www.wisetrix.com
+
+# Ninguém mexe neste arquivo
+<Files ~ “^.(htaccess|htpasswd)$”>
+	deny from all
+</Files>
+
+Options +FollowSymLinks
+
+RewriteEngine On
+RewriteBase /
+
+# possibilita acessar arquivos sem usar extensão .html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html
+
+# Redireciona toda página HTML para o CGI
+# faz com que o index.html seja apenas uma "dumb page"
+RewriteRule ^(.+)\.html$  /cgi-bin/wisepages/system/getHTML [L,NC,QSA]
+
+# Redireciona ao form de LOGIN se ele for chamado na URL
+# exemplo: http://www.wisepages.com/login
+RewriteRule ^login$  /cgi-bin/wisepages/system/getLogin [L,NC,QSA]
+
+# Recebe os dados do form de login
+# exemplo: http://www.wisepages.com/dologin
+RewriteRule ^dologin$  /cgi-bin/wisepages/system/doLogin [L,NC,QSA]
+
+# exemplo: http://www.wisepages.com/logout
+RewriteRule ^logout$  /cgi-bin/wisepages/system/doLogout [L,NC,QSA]
+
+# exemplo: http://www.wisepages.com/admin
+RewriteRule ^admin$  /cgi-bin/wisepages/system/getAdm [L,NC,QSA]
+
+# exemplo: http://www.wisepages.com/email
+RewriteRule ^email$  /cgi-bin/wisepages/system/sendMail [L,NC,QSA]
+
+# exemplo: http://www.wisepages.com/comment
+RewriteRule ^comment$  /cgi-bin/wisepages/system/sendComment [L,NC,QSA]
+
+# exemplo: http://www.wisepages.com/thumb
+RewriteRule ^thumb$  /cgi-bin/wisepages/system/getThumb [L,NC,QSA]
+
+
+# Define o index.html como principal (mesmo que ele seja "dumb")
+DirectoryIndex index.html index.php index.wise
+
+ErrorDocument 404 /erro404
+#ErrorDocument 404 "<h1>pagina nao encontrada</h1>"
+
+#ServerAdmin talk@zendrael.com
+

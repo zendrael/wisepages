@@ -1,0 +1,137 @@
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+	
+		<title>Kosmuz Magazine</title>
+		
+		<script type="text/javascript" language="JavaScript1.3" src="js/theme.js"></script>
+
+		<link title="estilos" rel="stylesheet" href="css/theme.css" type="text/css"/>
+
+	</head>
+	
+	<body>
+	
+		<div id="corpo">
+		
+			<div id="cabecalho">
+				<img src="imagens/kosmuz_logo.png"/>
+			</div>
+			
+			<div id="menu">
+				<ul>
+					<li><a href="">home</a></li>
+					<li><a href="">matérias</a></li>
+					<li><a href="">a revista</a></li>
+					<li>
+						<a href="#" 
+							onclick="carregar('curiosidades.html');">
+							curiosidades
+						</a>
+					</li>
+					<li><a href="">contato</a></li>
+				</ul>
+			</div>
+			
+			<div id="conteudo">
+				<div class="conTop"></div>
+				
+				<div class="conBody">
+					
+					<div class="conInfo" id="conInfo">
+						<h2>home</h2>
+						<img src="imagens/banner_home.png" />
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam enim sem, tempor nec suscipit a, tincidunt sit amet arcu. Aliquam blandit aliquam dignissim. Phasellus aliquam lacus vel ante faucibus a sodales leo volutpat. Proin porta ante et libero consequat tempus. Cras egestas gravida sollicitudin. Vestibulum sed orci metus, sed mollis justo. Aliquam erat volutpat. Morbi ultricies magna sit amet dui aliquam hendrerit. Curabitur dictum nisl non velit sollicitudin consectetur. Donec luctus interdum sem ut vestibulum. Integer suscipit consequat ornare. Nam in lorem diam. Aenean dolor mi, vulputate et posuere in, imperdiet in tellus. Cras euismod dapibus ligula id tempus.
+						</p>
+						<div class="conRod">
+							<a href="">leia mais »</a>
+						</div>
+					</div> <!-- fim conInfo -->
+					
+				</div> <!-- fim conBody -->
+				
+				<div class="conBottom"></div>
+			</div> <!-- fim conteudo -->
+			
+			<div id="lateral">
+				<div id="latItem">
+					<div class="cabecalho">
+						links
+					</div>
+					<img src="imagens/link.png"/>
+					<br/>
+					<img src="imagens/link.png" />
+				</div>
+				<div id="latItem">
+					<div class="cabecalho">
+						assinantes
+					</div>
+					
+					<p>login/e-mail</p>
+					<input type="text" size="30" id="txtNome"/><br/>
+					<p>senha</p>
+					<input type="password" size="30" id="txtSenha"/></br>
+					
+					<!-- div que contem os erros -->
+					<div id="loginErro">
+						Login e/ou senha inválidos!
+					</div>
+					
+					<input type="button" value="login" 
+						onclick="login();" />
+					
+				</div>
+			</div>
+			
+		</div>
+		<div id="rodape">
+			<div class="blocos">
+				<div class="rodParte">
+					<ul>
+						<li><a href="">editorial</a></li>
+						<li><a href="">jornalistas</a></li>
+					</ul>
+				</div>
+				<div class="rodParte">
+					<ul>
+						<li><a href="">parceiros</a></li>
+						<li><a href="">colaboradores</a></li>
+					</ul>
+				</div>
+				<div class="rodParte">
+					<ul>
+						<li><a href="">expediente</a></li>
+						<li><a href="">anunciantes</a></li>
+					</ul>
+				</div>
+				<div class="rodParte">
+					<ul>
+						<li><a href="">vídeos</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="rodFim">
+				Copyright &copy; 2011 Grupo Kosmuz - 
+				desenvolvido por 
+				<a href="http://www.minzao.com.br">
+				MINZAO Tecnologia</a>
+			</div>
+		</div>
+	
+	</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

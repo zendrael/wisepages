@@ -1,0 +1,64 @@
+<html>
+<!--
+	WisePages
+	---------
+	Content Management System
+	=========================
+	version 0.6b
+	date 17/04/2012
+	===============
+	Developed by Wisetrix Technology
+	--------------------------------
+	www.wisetrix.com
+	----------------
+	main developer: Zendrael <zendrael@wisetrix.com>
+	================================================
+-->
+	<head>
+		<meta charset="UTF-8"/>
+		<title>WisePages - by Wisetrix Technology</title>
+		<!-- css -->
+		<link title="look_and_feel" rel="stylesheet" href="sys.css/system.css" type="text/css"/>
+		<!-- js -->
+		<script type="text/javascript" language="JavaScript1.3" src="sys.js/system.js"></script>
+	</head>
+	
+	<body>
+		
+		<div id="divModal"></div>
+		<div id="divWindow">
+			<div id="divWinHeader">
+				<img src="sys.img/wisepages.png"/>
+			</div>
+			
+			<form method="post" action="doLogin">
+			
+				<div id="divWinBody">
+					<table width="100%">
+						<tr>
+							<td>Usuário</td>
+							<td>&nbsp;</td>
+							<td>Senha</td>
+							</tr>
+						<tr>
+							<td>
+								<input type="text" name="edtLogin" size="20"/>
+							</td>
+							<td>&nbsp;&nbsp;</td>
+							<td>
+								<input type="password" name="edtSenha" size="20"/>
+							</td>
+						</tr>
+					</table>
+					<div id="divWinError" class="msgError">nome e/ou senha incorretos!</div>
+				</div>
+				
+			</form>
+			<div id="divWinButtons">
+					<input type="submit" value="entrar" class="btnBlue" onclick="document.forms[0].submit();"/>
+				</div>
+		</div>
+
+	</body>
+	
+</html>

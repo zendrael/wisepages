@@ -1,0 +1,83 @@
+object WebModule: TWebModule
+  OnCreate = DataModuleCreate
+  OldCreateOrder = False
+  Actions = <  
+    item
+      Name = 'Default'
+      Default = True
+      OnRequest = DefaultRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'getJS'
+      Default = False
+      OnRequest = getJSRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'getCSS'
+      Default = False
+      OnRequest = getCSSRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'getHTML'
+      Default = False
+      OnRequest = getHTMLRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'doLogin'
+      Default = False
+      OnRequest = doLoginRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'doLogout'
+      Default = False
+      OnRequest = doLogoutRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'getLogin'
+      Default = False
+      OnRequest = getLoginRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'getAdm'
+      Default = False
+      OnRequest = getAdmRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'sendMail'
+      Default = False
+      OnRequest = sendMailRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'sendComment'
+      Default = False
+      OnRequest = sendCommentRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'upload'
+      Default = False
+      OnRequest = uploadRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'getThumb'
+      Default = False
+      OnRequest = getThumbRequest
+      Template.AllowTagParams = False
+    end>
+  OnRequest = DataModuleRequest
+  CreateSession = True
+  Height = 134
+  HorizontalOffset = 239
+  VerticalOffset = 126
+  Width = 192
+end

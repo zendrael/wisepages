@@ -1,0 +1,38 @@
+<!--
+	WisePages
+	---------
+	Content Management System
+	=========================
+	version 0.6b
+	date 20/01/2012
+	===============
+	Developed by Wisetrix Technology
+	--------------------------------
+	www.wisetrix.com
+	----------------
+	main developer: Zendrael <zendrael@gmail.com>
+	================================================
+-->
+
+<div class="formTitle">
+	<h2>Aparência</h2>
+</div>
+<div class="formBody">
+	<h3>
+		Alterar Modelo
+	</h3>
+	{wiseMsg}
+	<p>
+		<b>Utilizando modelo:</b> <i>{wiseTheme}</i><br />
+		<b>Autor:</b> <i>Wisetrix</i><br />
+		<b>Data:</b> <i>{wiseActivation}</i><br />
+	</p>
+	<p>
+		<form action="{wiseAdmPath}&act=2" method="post">
+			<label>Novo modelo a ser utilizado:</label><br/>
+			<input type="text" size="30" name="edtTema" id="edtTema" required="required"/><br/>
+			<input type="submit" value="salvar" class="btnBlue"/>
+		</form>
+	</p>
+			
+</div>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<!--
+	WisePages
+	---------
+	Content Management System
+	=========================
+	version 1.0c
+	date 20/01/2012
+	===============
+	Developed by Wisetrix Technology
+	--------------------------------
+	www.wisetrix.com
+	----------------
+	main developer: Zendrael <zendrael@gmail.com>
+	================================================
+-->
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="description" content="wisepages admin"/>
+		<meta name="robots" content="noindex,nofollow"/>
+		
+		<!-- icon -->
+		<link rel="add icon" href="sys.images/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="sys.images/favicon.ico" type="image/x-icon" />
+		<link rel="icon" href="sys.images/favicon.ico" type="image/ico" type="image/x-icon" />
+		
+		<title>WisePages</title>
+		
+		<!-- css -->
+		<link title="look_and_feel" rel="stylesheet" href="sys.css/system.css" type="text/css"/>
+		
+		<!-- js -->
+		<script type="text/javascript" src="sys.js/system.js"></script>
+		
+		<!-- libs -->
+		<!--<script src="sys.js/nicEdit.js" type="text/javascript"></script>
+		<script type="text/javascript">bkLib.onDomLoaded(nicEditors.allTextAreas);</script>-->
+		<script src="sys.lib/editor/ckeditor.js" type="text/javascript"></script>
+
+	</head>
+	
+	<body>
+	
+		<div id="divMenuBar">
+			
+			<div id="divLogo">
+				<img src="sys.img/wisepages.png"/>
+			</div>
+			<!--<div id="divUser">Admin</div>-->
+		
+			<div id="divMenu">
+				<!-- main menus -->
+				<dl id="dlMenu">
+					<dt><a href="#painel" class="sistema">painel</a></dt>
+						<dd id="painel">
+							<a href="admin#painel" onclick="#">início</a>
+							<a href="?p=1&i=2#painel" onclick="">informações do site</a>
+							<!--<a href="?p=1&i=3#painel" onclick="#">usuários</a>-->
+							<a href="logout" onclick="">sair</a>
+						</dd>
+					<dt><a href="#paginas" class="paginas">páginas</a></dt>
+						<dd id="paginas">
+							<a href="?p=2&i=3#paginas" onclick="">menus</a>
+							<a href="?p=2&i=1#paginas" onclick="">nova página</a>
+							<a href="?p=2&i=2#paginas" onclick="">listar páginas</a>
+						</dd>
+					<dt><a href="#midia" class="midia">fotos e vídeos</a></dt>
+						<dd id="midia">
+							<a href="?p=3&i=1#midia" onclick="">enviar arquivos</a>
+							<a href="?p=3&i=2#midia" onclick="">listar arquivos</a>
+							<a href="?p=3&i=3#midia" onclick="">galerias</a>
+						</dd>
+					<dt><a href="#blog" class="blog">blog</a></dt>
+						<dd id="blog">
+							<a href="?p=4&i=1#blog" onclick="">novo post</a>
+							<a href="?p=4&i=2#blog" onclick="">listar posts</a>
+							<a href="?p=4&i=3#blog" onclick="">comentários</a>
+							<a href="?p=4&i=4#blog" onclick="">categorias</a>
+						</dd>
+					<!-- 
+					<dt><a href="#loja" class="loja">loja</a></dt>
+						<dd id="loja">
+							<a href="?p=5&i=1#loja" onclick="">novo produto</a>
+							<a href="?p=5&i=2#loja" onclick="">listar produtos</a>
+							<a href="?p=5&i=3#loja" onclick="">pedidos</a>
+						</dd>
+					-->
+					<dt><a href="#plugins" class="plugins">módulos</a></dt>
+						<dd id="plugins">
+							<a href="?p=7&i=1#plugins" onclick="">novo módulo</a>
+							<a href="?p=7&i=2#plugins" onclick="">listar módulos</a>
+						</dd>
+					<dt><a href="#acessos" class="acessos">acessos</a></dt>
+						<dd id="acessos">
+							<a href="?p=8&i=1#acessos" onclick="">ver estatísticas</a>
+						</dd>
+					<dt><a href="#aparencia" class="aparencia">aparência</a></dt>
+						<dd id="aparencia">
+							<a href="?p=6&i=2#aparencia" onclick="#">alterar modelo</a>
+						</dd>
+				</dl>
+				<!-- main menus end -->
+			</div>
+		
+		</div>
+		
+		<div id="divForms">
+			<div id="divContent">
+				
+				<!-- conteúdo gerado automaticamente -->
+				{wisePageLoad}			
+				<!-- fim conteúdo gerado automaticamente -->
+				
+			</div> 
+		</div>
+	
+	</body>
+	
+</html>

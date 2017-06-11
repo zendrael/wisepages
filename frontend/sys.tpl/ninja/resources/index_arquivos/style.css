@@ -1,0 +1,121 @@
+/*  
+Theme Name: WordPress Martial Arts Blog
+Theme URI: http://websitetemplates.bz/
+Description: The Software WordPress theme based on the famous <a href="http://websitetemplates.bz/">websitetemplates.bz</a>.
+Version: 1.0
+Author: websitetemplates.bz
+Author URI: http://websitetemplates.bz/
+
+	The CSS, XHTML and design is released under GPL:
+	http://www.opensource.org/licenses/gpl-license.php
+
+*/
+
+/* main tags */
+
+body {background:url(images/bg.jpg) repeat-y center 655px #020202; margin:0; overflow:auto; font-family:tahoma, serif; font-size:11px; color:#ADADAD;}
+table {margin:0; padding:0;}
+	td {padding:0; vertical-align:top;}
+div {vertical-align:top; margin:0; padding:0;}
+img {border:none;}
+h1, h2, h3, h4, h5, h6 {margin:0; padding:0;}
+p {margin:0 0 10px 0; padding:0;}
+a {color:#CBC2A5; text-decoration:underline;}
+a:hover {color:#DED4B8;}
+ul {margin:10px 0; padding:0; list-style-type:square;}
+	li {margin:0; padding:0; line-height:18px;}
+
+/* classes */
+
+img.left {float:left; margin:10px 0; margin-right:15px;}
+img.right {float:right; margin:10px 0; margin-left:15px;}
+
+br.clear {clear:both; height:1px; font-size:1px; line-height:1px; display:block;}
+
+label small {font-size:11px; margin-left:5px;}
+input {border:none;}
+input.text, textarea, select {font-size:11px; font-family:tahoma, arial, verdana; padding:2px 5px; background:#161617; color:#666666; border:1px inset #666666; margin-bottom:2px;}
+select {padding:0;}
+textarea { overflow:auto;}
+input.submit, input.reset {cursor:pointer; font-family:tahoma, arial, verdana; font-size:11px; font-weight:bold;}
+
+/* unique elements */
+
+#siteinner {width:766px; margin:0 auto;}
+
+	#header {height:323px; background:url(images/bg_header.jpg) no-repeat;}
+		#logo {padding:115px 0 0 70px;}
+	
+	#toprow {}
+		#toprow .top {height:100%; padding:0 58px 0 270px;}
+		#pages {height:43px !important; height:33px; padding-top:10px; float:left;}
+			#pages ul {list-style-type:none; margin:0;}
+				#pages ul li {float:left; margin:0 1px 0 0; padding:0;}
+					#pages ul li a {color:#FFE5E5; font-family:arial, verdana, tahoma; font-size:11px; font-weight:bold; text-decoration:none; display:block; padding:15px 22px 10px 22px; text-align:center;}
+					#pages ul li a:hover {color:#FFFFFF;}
+		#sf {float:right; color:#FFFFFF; line-height:23px; font-weight:bold; margin-left:40px; padding-top:22px;}
+			#sf .submit {width:66px; height:21px; color:#F0E1E7;}
+			#sf .submit:hover {color:#FFFFFF;}
+			#sf .text {background:#FFFFFF; border:1px solid; border-color:#404040 #D4D0C8 #D4D0C8 #404040; margin:1px 4px 0 10px; font-weight:normal;}
+			#sf span {white-space:nowrap;}
+	
+	#contentinner {border:none;}
+	 #contentinner div.bottom {background:url(images/bg_content_bottom.jpg) no-repeat bottom center;}
+	  #contentinner div.top {background:url(images/bg_content_top.jpg) no-repeat top center;}
+	
+		#left {width:230px; float:left; padding:40px 0 0 85px;}
+		
+			.sidebar {color:#000000;}
+				.sidebar a {color:#000000; text-decoration:underline;}
+				.sidebar a:hover {text-decoration:none; color:#000000;}
+				.sidebar p {padding:0 20px 0 10px;}
+				.sidebar ul {list-style-type:none;}
+					.sidebar ul li {margin:0; padding:0; color:#D0AE7D;}
+						.sidebar ul li h2 {color:#110F10; font-size:15px; font-family:"Times New Roman", serif; text-transform:uppercase; line-height:22px; padding:0 20px 0 29px; background:url(images/bg_sideheading.gif) no-repeat 0 3px;}
+						.sidebar ul li.top h2 {}
+						.sidebar ul li ul {margin:14px; padding-bottom:15px;}
+							.sidebar ul li ul li {line-height:21px; padding:0 0 0 15px; background:url(images/bg_sidelink.gif) no-repeat 0 8px;}
+				
+			#content {padding:60px 0 0 0; margin:0 40px 10px 325px; position:relative;}
+			
+				.pagetitle {font-size:14px; font-weight:bold; color:#FFFFFF; text-transform:uppercase; padding:0 10px; margin:10px 0; font-family:arial, verdana, tahoma;}
+			
+				.post {padding:0; margin:0;}
+					.post .heading {padding:10px 0; border-bottom:1px solid #2A2C2D;}
+						.post .heading .title {color:#F7F7F7; font-size:17px; font-family:"Times New Roman", serif; text-decoration:none; font-weight:bold; text-transform:uppercase;}
+						.post .author {color:#CFB866; font-size:11px; font-family:"Times New Roman", serif; text-transform:uppercase;}
+						.post .date {color:#FFFFFF; font-weight:bold; float:right;}
+					.post .content {padding:0;}
+					.post h3 {font-size:11px;}
+					.post p {margin:10px 0 0 0;}
+					.post img {border:1px solid #FFFFFF;}
+						.more-link, .post .edit, .post .comments {line-height:normal; float:right; font-weight:bold; display:block; line-height:33px; color:#BA8C2E; font-family:"Times New Roman", serif; font-size:14px; text-transform:lowercase;}
+							.more-link, .post .edit a, .post .comments a {text-decoration:none; color:#BA8C2E; padding:0 0 0 10px; text-decoration:underline; margin-left:20px;}
+							.more-link:hover, .post .edit a:hover, .post .comments a:hover {text-decoration:none; color:#E4A734;}
+					.post ul {list-style-type:none;}
+						.post ul li {padding-left:15px; background:url(images/star.gif) no-repeat 0 5px;}
+					.post p.postmetadata {color:#666666; background:#161617; font-size:11px; margin:10px 0; padding:10px; border:1px solid #666666;}
+						.post p.postmetadata small {font-size:10px;}
+						.post p.postmetadata a {color:#777777;}
+				
+				.entry {padding:0 10px;}
+						
+				.navigation {font-size:14px; text-transform:lowercase; font-family:"Times New Roman", serif; width:98%; line-height:50px;}
+					.navigation a {text-decoration:none; color:#BFA265; font-weight:bold;}
+					.navigation a:hover {color:#F0B745;}
+					.navigation .prev {}
+					.navigation .next {float:right;}
+				
+				.commentlist {margin:0;}
+					.commentlist li {background:none; padding:0; margin:10px 0;}
+								
+				textarea#comment {width:385px;}
+				input#submit {background:#161617; border:1px outset #666666; margin-top:10px; cursor:pointer; float:right; margin-right:10px; color:#666666;}
+				input#submit:hover {background:#212123;}
+	
+	#footer {text-align:right; color:#282828; padding:20px; padding-bottom:5px; float:right; width:550px; clear:both;}
+		#footer .left {text-align:center; width:168px; float:left;}
+		#footer .right {text-align:right;}
+			#footer .right span {color:#CC0202; font-weight:bold; text-decoration:underline;}
+		#footer a {color:#282828; text-decoration:none;}
+		#footer a:hover {text-decoration:underline;}

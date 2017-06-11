@@ -1,0 +1,45 @@
+<div id="conteudo">
+	<div class="conTop"></div>
+	
+	<div class="conBody">
+		
+		<div class="conInfo" id="conInfo">
+			
+			{wisePageLoad}
+			
+		</div> <!-- fim conInfo -->
+		
+	</div> <!-- fim conBody -->
+	
+	<div class="conBottom"></div>
+</div> <!-- fim conteudo -->
+
+<div id="lateral">
+	<div id="latItem">
+		<div class="cabecalho">
+			links
+		</div>
+		<img src="sys.tpl/kosmuz/img/link.png"/>
+		<br/>
+		<img src="sys.tpl/kosmuz/img/link.png" />
+	</div>
+	<div id="latItem">
+		<div class="cabecalho">
+			assinantes
+		</div>
+		
+		<p>login/e-mail</p>
+		<input type="text" size="30" id="txtNome"/><br/>
+		<p>senha</p>
+		<input type="password" size="30" id="txtSenha"/></br>
+		
+		<!-- div que contem os erros -->
+		<div id="loginErro">
+			Login e/ou senha inválidos!
+		</div>
+		
+		<input type="button" value="login" 
+			onclick="login();" />
+		
+	</div>
+</div>

@@ -1,0 +1,72 @@
+<html>
+	<head>
+
+		<meta charset="UTF-8"/>
+		{wiseInfo}
+		
+		<!-- extra css -->
+		<link title="look_and_feel" href='http://fonts.googleapis.com/css?family=Oswald&v1' rel='stylesheet' type='text/css'>
+		<link title="look_and_feel" rel="stylesheet" href="sys.tpl/{wiseConfigItem get="template"}/css/slideshow.css" type="text/css" />
+		<!-- extra js -->
+		<script type="text/javascript" src="sys.tpl/{wiseConfigItem get="template"}/js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="sys.tpl/{wiseConfigItem get="template"}/js/slideshow.js" defer="defer"></script>
+	
+	</head>
+	<body>
+		
+		<div id="main">
+			
+			<div id="header">
+				
+				<div class="box">
+					<img src="sys.tpl/{wiseConfigItem get="template"}/img/bellabia.png" />
+				</div>
+				
+			</div>
+			
+			<div class="containerMenu">
+					<div class="box">
+						<div class="menu">
+							{wiseMenu}
+						</div>
+					</div>
+			</div>
+			
+			<div id="body">
+				
+				<div class="box">
+					
+					<h1>header 1</h1>
+					<h2>header 2</h2>
+					<h3>header 3</h3>
+					<h4>header 4</h4>
+					
+					<input type="button" class="btnGray" value="botão 1" />
+					
+					<input type="button" class="btnOrange" value="botão 2" />
+					
+					
+				</div>
+				
+			</div>
+			
+			<div id="footer">
+				
+				<div class="box">
+					
+					<div class="menuFooter">
+							{wiseMenu}
+					</div>
+					
+					<div>
+						Conteúdo de propriedade de BellaBia Collection &copy; 2013. Site desenvolvido com <a href="http://www.wisetrix.com">WisePages</a>.
+					</div>
+					
+				</div>
+				
+			</div>
+		
+		</div>
+		
+	</body>
+</html>

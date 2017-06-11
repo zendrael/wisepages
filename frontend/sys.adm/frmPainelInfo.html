@@ -1,0 +1,118 @@
+
+<!--
+	WisePages
+	---------
+	Content Management System
+	=========================
+	version 0.6b
+	date 20/01/2012
+	===============
+	Developed by Wisepix Technology
+	--------------------------------
+	www.wisepix.com
+	----------------
+	main developer: Zendrael <zendrael@gmail.com>
+	================================================
+-->
+
+<div class="formTitle">
+	<h2>Painel</h2>
+</div>
+<div class="formBody">
+	<h3>
+		Informações do Site
+	</h3>
+	{wiseMsg}
+	<p>
+		<form action="{wiseAdmPath}&act=2" method="post">
+				<p>
+					<label><b>Título:</b></label><br />
+					<input type="text" id="title" name="title" size="40" value="{wiseConfigItem get="title"}" required="required"/><br />
+				</p>
+				<p>
+					<label><b>Descrição:</b></label><br />
+					<input type="text" id="description" name="description" size="70" value="{wiseConfigItem get="description"}"/><br />
+				</p>
+				<p>
+					<label><b>Palavras-chave:</b></label><br />
+					<input type="text" id="keywords" name="keywords" size="90" value="{wiseConfigItem get="keywords"}"/><br />
+				</p>
+				<p>
+					<label><b>E-mail:</b></label><br />
+					<input type="text" id="email" name="email" size="50" value="{wiseConfigItem get="email"}" required="required" /><br />
+				</p>
+				<p>
+					<label><b>Página inicial:</b></label><br />
+					<input type="text" id="mainpage" name="mainpage" size="20" value="{wiseConfigItem get="mainpage"}"/><br />
+				</p>
+				<p>
+					<label><b>Formato data/hora:</b></label><br />
+					<input type="text" id="datetimeformat" name="datetimeformat" size="30" value="{wiseConfigItem get="datetimeformat"}"/><br />
+				</p>
+				<p>
+					<label><b>Informações para envio de e-mail</b></label><br />
+					<label>As informações a seguir são para que seu site envie e-mails através do formulário de contato.</label>
+				</p>
+				<p>
+					<table cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td>
+								<label><b>Servidor</b></label>		
+							</td>
+							<td>
+								<label><b>Porta</b></label>		
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="text" id="smtpHost" name="smtpHost" size="30" value="{wiseConfigItem get="smtpHost"}"/>&nbsp;&nbsp;&nbsp;<br />		
+							</td>
+							<td>
+								<input type="text" id="smtpPort" name="smtpPort" size="10" value="{wiseConfigItem get="smtpPort"}"/><br />		
+							</td>
+						</tr>
+					</table>
+				</p>
+				<p>
+					<table cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td>
+								<label><b>Usuário</b></label>		
+							</td>
+							<td>
+								<label><b>Senha</b></label>		
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="text" id="smtpUser" name="smtpUser" size="30" value="{wiseConfigItem get="smtpUser"}"/>&nbsp;&nbsp;&nbsp;<br />		
+							</td>
+							<td>
+								<input type="text" id="smtpPass" name="smtpPass" size="30" value="{wiseConfigItem get="smtpPass"}"/><br />		
+							</td>
+						</tr>
+					</table>
+				</p>
+				<p>
+					<table cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td>
+								<input type="checkbox" id="smtpAutoTLS" name="smtpAutoTLS" value="{wiseConfigItem get="smtpAutoTLS"}" onclick="chkbxChange(this.id);" /> <label><b>Auto TLS</b></label>&nbsp;&nbsp;&nbsp;
+							</td>
+							<td>
+								<input type="checkbox" id="smtpFullSSL" name="smtpFullSSL" value="{wiseConfigItem get="smtpFullSSL"}" onclick="chkbxChange(this.id);" /> <label><b>Full SSL</b></label>&nbsp;&nbsp;&nbsp;
+							</td>
+							<td>
+								<input type="checkbox" id="smtpStartTLS" name="smtpStartTLS" value="{wiseConfigItem get="smtpStartTLS"}" onclick="chkbxChange(this.id);" /> <label><b>StartTLS</b></label>		
+							</td>
+						</tr>
+					</table>
+				</p>
+			<!-- -->
+			<input type="submit" value="salvar" class="btnBlue" onclick="chkbxAll();"/>
+		</form>
+	</p>
+			
+</div>
+
+<script src="sys.js/jsPainelInfo.js" type="text/javascript"></script>

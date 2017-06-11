@@ -1,0 +1,99 @@
+<!--
+	WisePages
+	---------
+	Content Management System
+	=========================
+	version 0.6b
+	date 20/01/2012
+	===============
+	Developed by Wisetrix Technology
+	--------------------------------
+	www.wisetrix.com
+	----------------
+	main developer: Zendrael <zendrael@gmail.com>
+	================================================
+-->
+
+<div class="formTitle">
+	<h2>Páginas</h2>
+</div>
+<div class="formBody">
+	<h3>
+		Menus
+	</h3>
+	{wiseMsg}
+	<p>
+		<table class="grid">
+			<thead>
+				<tr>
+					<th>menu</th>
+					<th>tipo</th>
+					<th>referência</th>
+					<th>posição</th>
+					<th>alterar</th>
+					<th>excluir</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<!-- -->
+				{wiseList type="menu"}
+				<!-- -->
+			</tbody>
+			
+			<tfoot>
+				<tr>
+					<th width="200" colspan="6" align="left">
+						Total de <i>{wiseList}</i> menus
+					</th>
+				</tr>
+			</tfoot>
+		</table>
+	</p>
+	
+	<p>&nbsp;</p>
+	
+	<p>
+		<form id="frmMenus" name="frmMenus" action="{wiseAdmPath}&act=1" method="post">
+			<input type="hidden" id="hdnId" name="hdnId" value="" />
+			
+			<table class="gridNormal" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+						<b><label id="lblTipoItem">Novo item de menu:</label></b><br/>
+						<input type="text" id="edtNome" name="edtNome"/>
+					</td>
+					<td>
+						<label>Tipo de menu:</label><br/>
+						<select id="selTipo" name="selTipo">
+							{wiseList type="tipo"}
+							<!--<option value=""> --------------- </option>
+							<option> -1------------- </option>
+							<option> -2------------- </option>-->
+						</select>
+					</td>
+					<td>
+						<label>Referência:</label><br/>
+						<select id="selRef" name="selRef">
+							{wiseList type="referencia"}
+							<!--<option> --------------- </option>-->
+						</select>
+					</td>
+					<td>
+						<label id="lblPosicao">Posição:</label></b><br/>
+						<input type="number" id="edtPosicao" name="edtPosicao" size="4"/>
+					</td>
+				</tr>
+			</table>
+
+			<p>
+				<input type="submit" id="btnSalvar" class="btnBlue" value="Salvar"/>
+			</p>
+			
+		</form>
+	</p>
+
+</div>
+
+<!-- carrega scripts necessários -->
+<script src="sys.js/jsPaginasMenus.js" type="text/javascript"></script>

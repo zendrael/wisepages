@@ -1,0 +1,45 @@
+
+<!--
+	WisePages
+	---------
+	Content Management System
+	=========================
+	version 0.6b
+	date 17/04/2012
+	===============
+	Developed by Wisetrix Technology
+	--------------------------------
+	www.wisetrix.com
+	----------------
+	main developer: Zendrael <zendrael@gmail.com>
+	================================================
+-->
+
+<div class="formTitle">
+	<h2>Blog</h2>
+</div>
+<div class="formBody">
+	<h3>
+		Novo Post
+	</h3>
+	<script src="sys.lib/editor/ckeditor.js" type="text/javascript"></script>
+	
+	{wiseForm}
+	
+	<form action="{wiseAdmPath}&act=1" method="post" enctype="multipart/form-data" name="formName">
+	<p>
+		<label>Título</label><br /><input type="text" name="pagefile" size="40"/><br />
+	</p>
+	<p>
+		<label>Tags</label><br /><input type="text" name="pagefile" size="40"/><br />
+	</p>
+	<p>
+		<label>Conteúdo</label><br /><textarea id="txtTeste" class="ckeditor" rows="20"  >&nbsp;</textarea>
+		<br/>	
+		<input type="submit" class="btnBlue" value="postar"/>
+	</p>
+			
+	</form>
+	<!--<textarea class="ckeditor" id="txtTeste" rows="20">bla</textarea>-->
+	<script>CKEDITOR.replace( "txtTeste" );</script>
+</div>
