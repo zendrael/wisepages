@@ -6,9 +6,9 @@
 	version 0.6b
 	date 17/04/2012
 	===============
-	Developed by Wisetrix Technology
+	Developed by wisepages Technology
 	--------------------------------
-	www.wisetrix.com
+	www.wisepages.com
 	----------------
 	main developer: Zendrael <zendrael@gmail.com>
 	================================================

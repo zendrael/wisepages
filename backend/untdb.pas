@@ -185,7 +185,7 @@ begin
 	                  straux := straux + '<meta name="rating" content="'+ Fields[0].AsString +'"/>' + sLineBreak;
                       //next;
                       straux := straux + '<meta name="generator" content="WisePages"/>' + sLineBreak;
-                      straux := straux + '<meta name="author" content="Wisetrix Technology"/>' + sLineBreak;
+                      straux := straux + '<meta name="author" content="wisepages Technology"/>' + sLineBreak;
 
 
 		              //<!-- css -->

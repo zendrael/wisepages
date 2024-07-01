@@ -1,5 +1,5 @@
 # WisePages settings
-# www.wisetrix.com
+# www.wisepages.com
 
 # Ninguém mexe neste arquivo
 <Files ~ “^.(htaccess|htpasswd)$”>

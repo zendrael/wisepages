@@ -1,7 +1,7 @@
 README.txt
 ----------
-THEME: wisetrix
-AUTHOR: wisetrix
+THEME: wisepages
+AUTHOR: wisepages
 DATE: 01/05/2012
 ================
 

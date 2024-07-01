@@ -129,7 +129,7 @@ begin
 	 for i:= 1 to 3 do begin
          if AnsiContainsStr( server, SERVERNAME[i] ) and AnsiContainsStr( host, SERVERNAME[i] ) then
          begin
-             (*if HttpGetText('http://www.wisetrix.com/auth/dominio.auth', strResponse) then
+             (*if HttpGetText('http://www.wisepages.com/auth/dominio.auth', strResponse) then
     		 begin
 		 	 	  //retorna
     	 	 	  Result:= strResponse.Text;*)
@@ -161,8 +161,8 @@ begin
      Handled:= true;
      //return some page dynamically
      AResponse.ContentType := 'text/html;charset=utf-8';
-     AResponse.Contents.Add('<h1>WISETRIX Technology</h1>');
-     AResponse.Contents.Add('<h3><a href="http://www.wisetrix.com">www.wisetrix.com</a></h3><hr/>');
+     AResponse.Contents.Add('<h1>wisepages Technology</h1>');
+     AResponse.Contents.Add('<h3><a href="http://www.wisepages.com">www.wisepages.com</a></h3><hr/>');
 
      if not checkServer( ARequest.Server, ARequest.Host ) then
      begin
