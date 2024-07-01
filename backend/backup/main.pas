@@ -5,7 +5,7 @@ unit main;
 interface
 
 uses
-  Classes, SysUtils, FileUtil, HTTPDefs, fpHTTP, fpWeb, strutils, iniwebsession, LazUTF8,
+  Classes, SysUtils, FileUtil, HTTPDefs, fpHTTP, fpWeb, strutils, iniwebsession,
   //bibliotecas de banco de dados
   sqldb, sqlite3conn,
   //bibliotecas de manipulação de arquivos e imagens

@@ -4,7 +4,7 @@ program websystem;
 
 uses
   fpCGI, fpWeb, main, untDB, untAdm, untAdmPage, untAdmPaginas, untMail,
-untAdmTemas, untPlugin, untAdmPainel, untBlog, untAdmBlog, utf8tools;
+untAdmTemas, untPlugin, untAdmPainel, untBlog, untAdmBlog;
 
 begin
     Application.Title:='wisepages';
