@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="/usr/bin/fpc" Date="1625802185"/>
+  <Params Value=" -MObjFPC -Scghi -CX -Cg -O3 -OoREGVAR -Xs -XX -l -vewnhibq -Fu/home/zendrael/Projects/personal/wisepages/synapse40/source/lib -Fu/home/zendrael/.lazarus/lib/weblaz/lib/x86_64-linux -Fu/usr/share/lazarus/3.4.0/components/sqldb/lib/x86_64-linux/gtk2 -Fu/usr/share/lazarus/3.4.0/components/ideintf/units/x86_64-linux/gtk2 -Fu/usr/share/lazarus/3.4.0/components/synedit/units/x86_64-linux/gtk2 -Fu/usr/share/lazarus/3.4.0/components/lazcontrols/lib/x86_64-linux/gtk2 -Fu/usr/share/lazarus/3.4.0/lcl/units/x86_64-linux/gtk2 -Fu/usr/share/lazarus/3.4.0/lcl/units/x86_64-linux -Fu/usr/share/lazarus/3.4.0/components/freetype/lib/x86_64-linux -Fu/usr/share/lazarus/3.4.0/components/codetools/units/x86_64-linux -Fu/usr/share/lazarus/3.4.0/components/buildintf/units/x86_64-linux -Fu/home/zendrael/.lazarus/onlinepackagemanager/packages/synapse40.1/lib/x86_64-linux -Fu/usr/share/lazarus/3.4.0/components/lazutils/lib/x86_64-linux -Fu/usr/share/lazarus/3.4.0/packager/units/x86_64-linux -Fu/home/zendrael/Projects/personal/wisepages/backend/ -o/home/zendrael/Projects/personal/wisepages/backend/system -dLCL -dLCLgtk2 system.lpr"/>
+  <Complete Value="False"/>
+</CONFIG>
